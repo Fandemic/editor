@@ -1,0 +1,16 @@
+<html>
+
+  <form method="post" action="/batchUpdateEmail">
+
+    <h1>Batch Email Updater</h1>
+    <p>There are {{count}} stars with no email address!</p>
+
+    {% for star in stars %}
+    {{star.name}}:
+    <input type="text" name="{{star.id}}"><br>
+    <br>
+    {% endfor %}
+    <input type="submit" value="Submit">
+  </form>
+
+</html>
