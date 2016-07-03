@@ -6,7 +6,7 @@
     <p>There are {{count}} stars with no email address!</p>
 
     {% for star in stars %}
-    {{star.name}}:
+    {{star.name}} - <a href="https://www.google.com/#q={{star.name}}" target="_blank">google</a> - <a href="{{star.url.youtube}}" target="_blank">youtube</a>:
     <input type="text" name="{{star.id}}"><br>
     <br>
     {% endfor %}
